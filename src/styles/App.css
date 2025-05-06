@@ -1,0 +1,30 @@
+.app {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  .container {
+    padding: var(--space-3);
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* For screens between 600px and 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+  .container {
+    padding: var(--space-4);
+  }
+}
+
+/* For screens larger than 900px */
+@media (min-width: 901px) {
+  .container {
+    padding: var(--space-5);
+  }
+}
