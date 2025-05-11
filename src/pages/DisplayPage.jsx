@@ -1,10 +1,9 @@
 import { useNavigate } from 'react-router-dom'
+
 import '../styles/DisplayPage.css'
 
 function DisplayPage({ textDisplay }) {
-  const navigate = useNavigate()
-  
-  // Redirect to input page if no text is set
+  const navigate = useNavigate()  
   if (!textDisplay.text) {
     navigate('/')
     return null
@@ -20,6 +19,7 @@ function DisplayPage({ textDisplay }) {
       <div className="text-container">
         <div className="displayed-text">{textDisplay.text}</div>
       </div>
+      <div className="author-signature">written by Shubham Chaturvedi</div>
     </div>
   )
 }
