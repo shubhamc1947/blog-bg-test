@@ -9,6 +9,7 @@ function InputPage({ textDisplay, setTextDisplay }) {
   
   // Use local state for tracking changes before submission
   const [formState, setFormState] = useState({
+    author:textDisplay.author,
     text: textDisplay.text,
     gradient: textDisplay.gradient,
     font: textDisplay.font
@@ -60,6 +61,18 @@ function InputPage({ textDisplay, setTextDisplay }) {
               value={formState.text}
               onChange={handleChange}
               placeholder="Enter text to display"
+              autoComplete="off"
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="text">Enter Author Name</label>
+            <input
+              type="text"
+              id="author"
+              name="author"
+              value={formState.author}
+              onChange={handleChange}
+              placeholder="Enter Author"
               autoComplete="off"
             />
           </div>

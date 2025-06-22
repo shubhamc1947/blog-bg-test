@@ -19,7 +19,7 @@ function DisplayPage({ textDisplay }) {
       <div className="text-container">
         <div className="displayed-text">{textDisplay.text}</div>
       </div>
-      <div className="author-signature">written by Shubham Chaturvedi</div>
+      <div className="author-signature">written by { textDisplay.author}</div>
     </div>
   )
 }

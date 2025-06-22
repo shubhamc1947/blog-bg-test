@@ -9,6 +9,7 @@ function App() {
 
   const [textDisplay, setTextDisplay] = useState({
     text: '',
+    author:'',
     gradient: 'linear-gradient(to right, #fc5c7d, #6a82fb)',
     font: 'Arial, sans-serif'
   })
